@@ -1,0 +1,116 @@
+<div class="container-fluid border-bottom py-2">
+    <div class="d-flex justify-content-between align-items-center">
+      <div class="p-3">
+        <h1 class="text-center">LMS</h1>
+      </div>
+      <div>
+        <button class="btn btn-primary me-2" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+        <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#signupModal">SignUp</button>
+      </div>
+    </div>
+  </div>
+  
+  <div class="px-5 py-5" style="min-height: calc(100vh - 400px); background-color: #f8f9fa;">
+    <h1 class="fw-bold mb-4" style="font-size: 3rem; color: #0d6efd;">
+      Learning Management System
+    </h1>
+    <p class="mb-3" style="font-size: 1.2rem; color: #444; max-width: 700px;">
+      Welcome to your centralized platform for learning, collaboration, and progress tracking. Our LMS is designed to simplify your academic journey with a clean interface and easy access to everything you need.
+    </p>
+    <p style="font-size: 1.1rem; color: #555; max-width: 680px;">
+      Whether you're a student or an instructor, enjoy seamless communication, organized resources, and productive learning—all in one place.
+    </p>
+  </div>
+
+<div class="row text-center px-4 py-5 bg-white">
+  <!-- Students Card -->
+  <div class="col-md-4 mb-4">
+    <div class="card shadow-sm p-4 border-0">
+      <h2 class="text-primary">1,200+</h2>
+      <p class="mb-0 fw-semibold">Students Enrolled</p>
+    </div>
+  </div>
+
+  <!-- Courses Card -->
+  <div class="col-md-4 mb-4">
+    <div class="card shadow-sm p-4 border-0">
+      <h2 class="text-success">45+</h2>
+      <p class="mb-0 fw-semibold">Available Courses</p>
+    </div>
+  </div>
+
+  <!-- Teachers Card -->
+  <div class="col-md-4 mb-4">
+    <div class="card shadow-sm p-4 border-0">
+      <h2 class="text-warning">20+</h2>
+      <p class="mb-0 fw-semibold">Qualified Teachers</p>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content p-4">
+        <div class="modal-header">
+          <h1 >Login</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Login Form -->
+          <form>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter email" />
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label">Password</label>
+              <input type="password" class="form-control" id="password" placeholder="Password" />
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Login</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content p-4">
+        <div class="modal-header">
+          <h1>SignUp</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Login Form -->
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Full Name</label>
+              <input type="name" class="form-control" id="name" placeholder="Enter Name" />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="email" />
+            </div>
+            <div class="mb-3">
+                <label for="mobile" class="form-label">Mobile</label>
+                <input type="number" class="form-control" id="mobile" placeholder="Mobile" />
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Password" />
+            </div>
+            <button type="submit" class="btn btn-primary w-100">SignUp</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+
+  
+  
+  

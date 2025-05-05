@@ -1,0 +1,42 @@
+.text-center{
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: #0d6efd;
+    letter-spacing: 3px;
+}
+
+.landing-text-section {
+    padding: 80px 20px;
+    text-align: center;
+  }
+
+  .landing-text-section h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    background: linear-gradient(90deg, #0d6efd, #6610f2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+  }
+
+  .landing-text-section p {
+    font-size: 1.25rem;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #555;
+    line-height: 1.7;
+  }
+
+  .highlight {
+    color: #0d6efd;
+    font-weight: 600;
+  }
+
+  .modal-lg {
+    max-width: 80%;  /* Increases the modal width */
+  }
+
+  .modal-content {
+    min-height: 400px; /* Increases the height of the modal */
+  }
