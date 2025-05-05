@@ -1,0 +1,15 @@
+.upload-card {
+    max-width: 90%;
+    margin: 50px auto;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .form-label {
+    font-weight: 500;
+  }
+
+  .btn-upload {
+    width: 100%;
+  }

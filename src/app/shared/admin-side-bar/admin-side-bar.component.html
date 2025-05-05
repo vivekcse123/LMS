@@ -1,0 +1,58 @@
+<div class="sidebar bg-white shadow-sm p-3" style="width: 99%; height: 90vh;">
+  <ul class="nav flex-column">
+    <li class="nav-item mb-2">
+      <a 
+        [routerLink]="'/admin/dashboard/home'" 
+        class="nav-link d-flex align-items-center text-dark" 
+        routerLinkActive="active-link" 
+        [routerLinkActiveOptions]="{ exact: true }">
+        <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="home"></mat-icon> Home
+      </a>
+    </li>
+    <li class="nav-item mb-2">
+      <a 
+        [routerLink]="'/admin/dashboard/manage-students'" 
+        class="nav-link d-flex align-items-center text-dark" 
+        routerLinkActive="active-link" 
+        [routerLinkActiveOptions]="{ exact: true }">
+        <mat-icon aria-hidden="false" aria-label="Example Manage icon" fontIcon="manage_accounts"></mat-icon> Manage Students
+      </a>
+    </li>
+    <li class="nav-item mb-2">
+      <a 
+        [routerLink]="'/admin/dashboard/students-list'" 
+        class="nav-link d-flex align-items-center text-dark" 
+        routerLinkActive="active-link" 
+        [routerLinkActiveOptions]="{ exact: true }">
+        <mat-icon aria-hidden="false" aria-label="Example List icon" fontIcon="format_list_bulleted"></mat-icon> Students List
+      </a>
+    </li>
+    <li class="nav-item mb-2">
+      <a 
+        [routerLink]="'/admin/dashboard/upload-notes'" 
+        class="nav-link d-flex align-items-center text-dark" 
+        routerLinkActive="active-link" 
+        [routerLinkActiveOptions]="{ exact: true }">
+        <mat-icon aria-hidden="false" aria-label="Example Upload icon" fontIcon="upload"></mat-icon>Upload Notes
+      </a>
+    </li>
+    <li class="nav-item mb-2">
+      <a 
+        [routerLink]="'/admin/dashboard/upload-assignments'" 
+        class="nav-link d-flex align-items-center text-dark" 
+        routerLinkActive="active-link" 
+        [routerLinkActiveOptions]="{ exact: true }">
+        <mat-icon aria-hidden="false" aria-label="Example Upload icon" fontIcon="upload"></mat-icon>Upload Assignments
+      </a>
+    </li>
+    <li class="nav-item mb-2">
+      <a 
+        [routerLink]="'/admin/dashboard/queries'" 
+        class="nav-link d-flex align-items-center text-dark" 
+        routerLinkActive="active-link" 
+        [routerLinkActiveOptions]="{ exact: true }">
+        <mat-icon aria-hidden="false" aria-label="Example Queries icon" fontIcon="quiz"></mat-icon>Queries
+      </a>
+    </li>
+  </ul>
+</div>

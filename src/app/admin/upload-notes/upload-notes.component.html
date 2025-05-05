@@ -1,0 +1,23 @@
+<div class="container">
+    <h2 class="mb-4">Upload Notes</h2>
+    <div class="card upload-card">
+      <form action="#" method="post" enctype="multipart/form-data">
+        <div class="mb-3">
+          <label for="title" class="form-label">Note Title</label>
+          <input type="text" class="form-control" id="title" name="title" placeholder="Enter note title" required>
+        </div>
+  
+        <div class="mb-3">
+          <label for="subject" class="form-label">Subject</label>
+          <input type="text" class="form-control" id="subject" name="subject" placeholder="Enter subject" required>
+        </div>
+  
+        <div class="mb-3">
+          <label for="noteFile" class="form-label">Choose File</label>
+          <input type="file" class="form-control" id="noteFile" name="noteFile" accept=".pdf,.doc,.docx,.txt" required>
+        </div>
+  
+        <button type="submit" class="btn btn-primary btn-upload">Upload</button>
+      </form>
+    </div>
+  </div>

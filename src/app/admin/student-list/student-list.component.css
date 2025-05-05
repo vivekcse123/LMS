@@ -1,0 +1,25 @@
+    .list-group-item {
+      border: 1px solid #333;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 20px;
+      transition: background-color 0.2s ease;
+    }
+
+    .list-group-item:hover {
+      background-color: #335da1;
+      color: white;
+    }
+
+    .btn-view {
+      background-color: #0d6efd;
+      color: white;
+      border: none;
+    }
+
+    .btn-view:hover {
+      background-color: #0b5ed7;
+    }
