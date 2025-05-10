@@ -54,5 +54,14 @@
         <mat-icon aria-hidden="false" aria-label="Example Queries icon" fontIcon="quiz"></mat-icon>Queries
       </a>
     </li>
+    <li class="nav-item mb-2">
+      <a 
+        [routerLink]="'/admin/dashboard/quiz'" 
+        class="nav-link d-flex align-items-center text-dark" 
+        routerLinkActive="active-link" 
+        [routerLinkActiveOptions]="{ exact: true }">
+        <mat-icon aria-hidden="false" aria-label="Example Quiz icon" fontIcon="quiz"></mat-icon>Quiz
+      </a>
+    </li>
   </ul>
 </div>

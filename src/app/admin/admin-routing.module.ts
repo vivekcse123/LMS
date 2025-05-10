@@ -7,6 +7,7 @@ import { StudentListComponent } from './student-list/student-list.component';
 import { UploadNotesComponent } from './upload-notes/upload-notes.component';
 import { UploadAssignmentsComponent } from './upload-assignments/upload-assignments.component';
 import { QueriesComponent } from './queries/queries.component';
+import { QuizComponent } from './quiz/quiz.component';
 
 const routes: Routes = [
   {path: '', redirectTo: 'dashboard', pathMatch: 'full'},
@@ -20,7 +21,8 @@ const routes: Routes = [
       {path: 'students-list', component: StudentListComponent},
       {path: 'upload-notes', component: UploadNotesComponent},
       {path: 'upload-assignments', component: UploadAssignmentsComponent},
-      {path: 'queries', component: QueriesComponent}
+      {path: 'queries', component: QueriesComponent},
+      {path: 'quiz', component: QuizComponent}
     ]
   },
 ];
