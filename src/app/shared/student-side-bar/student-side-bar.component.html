@@ -2,7 +2,7 @@
   <ul class="nav flex-column">
     <li class="nav-item mb-2">
       <a 
-        [routerLink]="'/admin/dashboard/home'" 
+        [routerLink]="'/student/dashboard/home'" 
         class="nav-link d-flex align-items-center text-dark" 
         routerLinkActive="active-link" 
         [routerLinkActiveOptions]="{ exact: true }">
@@ -11,56 +11,47 @@
     </li>
     <li class="nav-item mb-2">
       <a 
-        [routerLink]="'/admin/dashboard/manage-students'" 
+        [routerLink]="'/student/dashboard/courses'" 
         class="nav-link d-flex align-items-center text-dark" 
         routerLinkActive="active-link" 
         [routerLinkActiveOptions]="{ exact: true }">
-        <mat-icon aria-hidden="false" aria-label="Example Manage icon" fontIcon="manage_accounts"></mat-icon> Manage Students
+        <mat-icon aria-hidden="false" aria-label="Example Manage icon" fontIcon="manage_accounts"></mat-icon>Courses
       </a>
     </li>
     <li class="nav-item mb-2">
       <a 
-        [routerLink]="'/admin/dashboard/students-list'" 
+        [routerLink]="'/student/dashboard/notes'" 
         class="nav-link d-flex align-items-center text-dark" 
         routerLinkActive="active-link" 
         [routerLinkActiveOptions]="{ exact: true }">
-        <mat-icon aria-hidden="false" aria-label="Example List icon" fontIcon="format_list_bulleted"></mat-icon> Students List
+        <mat-icon aria-hidden="false" aria-label="Example List icon" fontIcon="library_add"></mat-icon> Notes
       </a>
     </li>
     <li class="nav-item mb-2">
       <a 
-        [routerLink]="'/admin/dashboard/upload-notes'" 
+        [routerLink]="'/student/dashboard/assignments'" 
         class="nav-link d-flex align-items-center text-dark" 
         routerLinkActive="active-link" 
         [routerLinkActiveOptions]="{ exact: true }">
-        <mat-icon aria-hidden="false" aria-label="Example Upload icon" fontIcon="upload"></mat-icon>Upload Notes
+        <mat-icon aria-hidden="false" aria-label="Example Upload icon" fontIcon="upload"></mat-icon>Assignments
       </a>
     </li>
     <li class="nav-item mb-2">
       <a 
-        [routerLink]="'/admin/dashboard/upload-assignments'" 
-        class="nav-link d-flex align-items-center text-dark" 
-        routerLinkActive="active-link" 
-        [routerLinkActiveOptions]="{ exact: true }">
-        <mat-icon aria-hidden="false" aria-label="Example Upload icon" fontIcon="upload"></mat-icon>Upload Assignments
-      </a>
-    </li>
-    <li class="nav-item mb-2">
-      <a 
-        [routerLink]="'/admin/dashboard/queries'" 
-        class="nav-link d-flex align-items-center text-dark" 
-        routerLinkActive="active-link" 
-        [routerLinkActiveOptions]="{ exact: true }">
-        <mat-icon aria-hidden="false" aria-label="Example Queries icon" fontIcon="question_mark"></mat-icon>Queries
-      </a>
-    </li>
-    <li class="nav-item mb-2">
-      <a 
-        [routerLink]="'/admin/dashboard/quiz'" 
+        [routerLink]="'/student/dashboard/quiz'" 
         class="nav-link d-flex align-items-center text-dark" 
         routerLinkActive="active-link" 
         [routerLinkActiveOptions]="{ exact: true }">
         <mat-icon aria-hidden="false" aria-label="Example Quiz icon" fontIcon="quiz"></mat-icon>Quiz
+      </a>
+    </li>
+     <li class="nav-item mb-2">
+      <a 
+        [routerLink]="'/student/dashboard/queries'" 
+        class="nav-link d-flex align-items-center text-dark" 
+        routerLinkActive="active-link" 
+        [routerLinkActiveOptions]="{ exact: true }">
+        <mat-icon aria-hidden="false" aria-label="Example Queries icon" fontIcon="question_mark"></mat-icon>Queries
       </a>
     </li>
   </ul>

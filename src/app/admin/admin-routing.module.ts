@@ -16,7 +16,7 @@ const routes: Routes = [
     loadComponent: () => import('../admin/admin-dashboard/admin-dashboard.component').then(m => m.AdminDashboardComponent),
     children: [
       {path: '', redirectTo: 'home', pathMatch: 'full'},
-      {path: 'home', component: HomeComponent},
+      {path: 'home', loadComponent : () => import('../admin/home/home.component').then(m => m.HomeComponent)},
       {path: 'manage-students', component: ManageStudentsComponent},
       {path: 'students-list', component: StudentListComponent},
       {path: 'upload-notes', component: UploadNotesComponent},
