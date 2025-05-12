@@ -1,1 +1,79 @@
-<p>quiz works!</p>
+<form #quizForm="ngForm" class="p-4 border rounded bg-light">
+
+    <div class="mb-3">
+        <label for="question" class="form-label">Enter your Question:</label>
+        <input type="text" id="question" class="form-control" placeholder="Add your question here" name="question"
+        [(ngModel)]="quiz.question" required/>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Choices:</label>
+
+        <div class="input-group mb-2">
+            <span class="input-group-text">A</span>
+            <input type="text" class="form-control" placeholder="Option 1" name="optionA" [(ngModel)]="quiz.options.A"
+            required />
+        </div>
+
+        <div class="input-group mb-2">
+            <span class="input-group-text">B</span>
+            <input type="text" class="form-control" placeholder="Option 2" name="optionB" [(ngModel)]="quiz.options.B"
+            required />
+        </div>
+
+        <div class="input-group mb-2">
+            <span class="input-group-text">C</span>
+            <input type="text" class="form-control" placeholder="Option 3" name="optionC" [(ngModel)]="quiz.options.C"
+            required />
+        </div>
+
+        <div class="input-group mb-2">
+            <span class="input-group-text">D</span>
+            <input type="text" class="form-control" placeholder="Option 4" name="optionD" [(ngModel)]="quiz.options.D"
+            required />
+        </div>
+    </div>
+
+    <div class="mb-3">
+    <label class="form-label">Correct Answer:</label>
+    <div class="btn-group" role="group" aria-label="Correct answer">
+    <input type="radio" class="btn-check" name="correctAnswer" id="optionA" value="A"
+    [(ngModel)]="quiz.correctAnswer" />
+    <label class="btn btn-outline-primary" for="optionA">A</label>
+
+    <input type="radio" class="btn-check" name="correctAnswer" id="optionB" value="B"
+    [(ngModel)]="quiz.correctAnswer"/>
+    <label class="btn btn-outline-primary" for="optionB">B</label>
+
+    <input type="radio" class="btn-check" name="correctAnswer" id="optionC" value="C"
+    [(ngModel)]="quiz.correctAnswer" />
+    <label class="btn btn-outline-primary" for="optionC">C</label>
+
+    <input
+    type="radio"
+    class="btn-check"
+    name="correctAnswer"
+    id="optionD"
+    value="D"
+    [(ngModel)]="quiz.correctAnswer"
+    />
+    <label class="btn btn-outline-primary" for="optionD">D</label>
+    </div>
+    </div>
+
+    <div class="mb-3">
+    <label for="explanation" class="form-label">Add Explanation:</label>
+    <textarea
+    class="form-control"
+    id="explanation"
+    name="explanation"
+    rows="3"
+    placeholder="Add the explanation here..."
+    [(ngModel)]="quiz.explanation"
+    ></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-success" [disabled]="!quizForm.valid">
+    Submit Question
+    </button>
+</form>
